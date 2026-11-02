@@ -1,0 +1,51 @@
+# Vipeak AI
+
+> Vipeak AI is an 18+ AI character video and companion creation platform at https://123vips.com/. Users can browse AI characters, chat with characters, generate AI images and videos, use character templates, explore cases and workflows, manage credits and history, and access developer API documentation.
+
+## Project scope
+
+This repository is an independent product introduction and API integration documentation repository. It is not the source code of the 123vips.com website and does not contain user data, credentials, or production configuration.
+
+## Core capabilities
+
+- AI character discovery, tags, categories, and character templates
+- AI character chat and companion experiences
+- AI image generation
+- AI video generation
+- Image-to-video generation
+- Text-to-video generation
+- Cases, advanced generation, and creative workflows
+- Account credits, recharge, generation history, and referrals
+- Developer API Access and integration preparation
+
+## Developer integration
+
+The complete API documentation is obtained through the logged-in API Access area on 123vips.com. Public information does not expose the API Base URL, authentication scheme, endpoint paths, webhook format, or billing rules. Do not infer or guess unpublished API details.
+
+Recommended architecture:
+
+- Keep upstream API keys on the server only
+- Store users, tasks, credits, orders, and generation records in PostgreSQL
+- Store image and video files in object storage with metadata retained in PostgreSQL
+- Handle asynchronous tasks, polling or webhooks, timeouts, retries, idempotency, and failure refunds
+
+## Official links
+
+- Main site: https://123vips.com/
+- Brand page: https://123vips.com/site-landing.html
+- Character and creation workspace: https://123vips.com/live.html
+- Character library: https://123vips.com/characters/
+- Tags: https://123vips.com/tags/
+- Categories: https://123vips.com/categories/
+- API Access: https://123vips.com/#access
+
+## Key terms
+
+Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation.
+
+## Notes
+
+- The website contains adult-oriented content and requires an 18+ confirmation.
+- Site generation uses account credits and does not require API documentation access.
+- API access is a separate developer capability; availability and terms are shown after signing in.
+- This repository contains no passwords, tokens, database URLs, user data, or payment credentials.

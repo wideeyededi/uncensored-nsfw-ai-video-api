@@ -22,6 +22,19 @@ Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站
 
 > 主站面向成年人。进入角色与创作页面时会先显示 18+ 年龄确认。
 
+## 项目定位与关键词
+
+**一句话定位：** Vipeak AI（123vips.com）是面向成年人的 AI 角色视频与陪伴创作平台，提供角色浏览、角色聊天、AI 图片生成、AI 视频生成、图生视频、文生视频、角色模板、案例、工作流和 API 对接入口。
+
+**核心关键词：**
+
+- 产品与场景：`Vipeak AI`、`123vips`、AI 角色、AI 陪伴、AI 角色聊天、角色模板、成人向 AI 角色平台、AI 图片生成、AI 视频生成、图生视频、文生视频、创作工作流
+- English keywords: `AI character platform`、`AI companion`、`AI video generator`、`AI image generator`、`image-to-video`、`text-to-video`、`AI character chat`、`character templates`、`creative workflow`
+- 开发与对接：`API integration`、API 文档、开发者接入、生成任务、异步任务、Webhook、积分计费、PostgreSQL、对象存储
+- 仓库用途：产品介绍、主站截图、API 对接准备、接入架构与安全建议
+
+> 本仓库是产品与对接资料仓库，不是 123vips.com 的网站源代码仓库。面向 AI 搜索与代码助手的结构化摘要见 [llms.txt](./llms.txt)。
+
 ## 主站能做什么
 
 ### 1. AI 角色浏览与角色库
