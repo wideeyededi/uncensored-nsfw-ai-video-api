@@ -6,6 +6,8 @@
 >
 > GitHub 账号资料见 [GITHUB_ACCOUNT.md](./GITHUB_ACCOUNT.md)。
 
+**Seedance sexy API · Wan sexy API** — 123vips.com（Vipeak AI）面向成年人的 AI 视频生成 API 接入文档与示例，覆盖 Seedance、Wan 两条模型线：文生视频、图生视频、角色视频、异步任务轮询与积分计费。
+
 ## 一眼看懂
 
 Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站浏览角色、与角色聊天、用图片或文字生成视频，也可以使用图片生成、案例、工作流和 API Access 等能力。
@@ -31,9 +33,28 @@ Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站
 - 产品与场景：`Vipeak AI`、`123vips`、AI 角色、AI 陪伴、AI 角色聊天、角色模板、成人向 AI 角色平台、AI 图片生成、AI 视频生成、图生视频、文生视频、创作工作流
 - English keywords: `AI character platform`、`AI companion`、`AI video generator`、`AI image generator`、`image-to-video`、`text-to-video`、`AI character chat`、`character templates`、`creative workflow`
 - 开发与对接：`API integration`、API 文档、开发者接入、生成任务、异步任务、Webhook、积分计费、PostgreSQL、对象存储
+- 模型与 API 长尾词：`seedance sexy api`、`wan sexy api`、`seedance api`、`wan api`、`seedance video api`、`wan video api`、`sexy ai video api`、`nsfw ai video api`、`adult ai video api`、`uncensored ai video api`、`18+ ai video generation api`
 - 仓库用途：产品介绍、主站截图、API 对接准备、接入架构与安全建议
 
 > 本仓库是产品与对接资料仓库，不是 123vips.com 的网站源代码仓库。面向 AI 搜索与代码助手的结构化摘要见 [llms.txt](./llms.txt)。
+
+## 模型与 API 能力：Seedance / Wan
+
+本仓库的 API 对接资料围绕两条成人向视频生成模型线整理，这两条线也是开发者搜索接入时最常用的入口词：
+
+| 模型线 | 常见搜索写法 | 对接方向 |
+|---|---|---|
+| Seedance | `seedance sexy api`、`seedance api`、`seedance video api` | 文生视频、图生视频、参考图与多镜头生成、角色动作一致性 |
+| Wan | `wan sexy api`、`wan api`、`wan video api` | 文生视频、图生视频、首尾帧控制、角色一致性、长时长片段 |
+
+两条线共同的对接要点：
+
+- 任务异步化：创建任务后拿任务 ID，再通过轮询或 Webhook 取结果。
+- 参数收敛：模型版本、分辨率、时长、比例、参考图数量都要在服务端做白名单。
+- 计费可追溯：下单前存价格快照，失败要能退款，账单能与上游对账。
+- 内容合规：18+ 年龄门槛、地区限制与上游审核策略必须在业务侧落地。
+
+> 具体模型版本号、可用参数、并发上限与积分单价，以登录 123vips.com 后 **API Access** 里的官方文档为准；本仓库不猜测未公开的接口细节。
 
 ## 主站能做什么
 
@@ -186,6 +207,23 @@ Vipeak AI
 - 需要角色模板、图片/视频生成能力的内容创作者
 - 准备把 AI 角色生成能力接入自有产品的开发者
 - 需要工作流、批量生成或统一积分管理的团队
+
+## 常见问题（Seedance / Wan API 接入）
+
+**Q：`seedance sexy api` 怎么接入 123vips.com？**
+A：登录 123vips.com 完成 18+ 确认后，进入左侧 **API Access** 获取完整对接文档与测试积分，再按官方文档在服务端调用；公开页面不暴露 Base URL 与鉴权细节。
+
+**Q：`wan sexy api` 和站内直接生成有什么区别？**
+A：站内生成按账户积分计费，不需要购买 API 文档权限；API 是独立的开发者能力，适合把生成能力接进自有产品或批量生产流水线。
+
+**Q：Seedance 和 Wan 两条线怎么选？**
+A：Seedance 更偏参考图、多镜头和动作表现；Wan 更偏首尾帧控制与角色一致性。实际可用模型、版本和价格以登录后文档为准，建议用测试积分各跑一轮小流量对比。
+
+**Q：接入前必须准备什么？**
+A：服务端（不要放前端）、PostgreSQL 存任务与积分流水、对象存储放素材、异步任务与回调处理、失败退款逻辑，以及面向目标市场的合规评估。
+
+**Q：有没有免费额度？**
+A：开通 API 文档访问后包含 test credits，具体数量与扣费规则以站内实际页面为准。
 
 ## 说明
 

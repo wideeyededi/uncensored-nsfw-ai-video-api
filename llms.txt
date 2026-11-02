@@ -29,6 +29,17 @@ Recommended architecture:
 - Store image and video files in object storage with metadata retained in PostgreSQL
 - Handle asynchronous tasks, polling or webhooks, timeouts, retries, idempotency, and failure refunds
 
+## Model lines: Seedance and Wan
+
+The API integration material in this repository focuses on two adult-oriented video generation model lines:
+
+- **Seedance** — searched as `seedance sexy api`, `seedance api`, `seedance video api`. Direction: text-to-video, image-to-video, reference-image and multi-shot generation, character motion consistency.
+- **Wan** — searched as `wan sexy api`, `wan api`, `wan video api`. Direction: text-to-video, image-to-video, first/last frame control, character consistency, longer clips.
+
+Shared integration requirements: asynchronous task model (task id plus polling or webhook), server-side whitelisting of model version, resolution, duration and reference count, price snapshot before order with refund on failure, and an 18+ gate with regional compliance on the business side.
+
+Model versions, parameters, concurrency limits and per-credit pricing are only available in the official documentation behind the logged-in API Access area.
+
 ## Official links
 
 - Main site: https://123vips.com/
@@ -41,7 +52,7 @@ Recommended architecture:
 
 ## Key terms
 
-Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation.
+Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation, seedance sexy api, wan sexy api, seedance api, wan api, seedance video api, wan video api, sexy ai video api, nsfw ai video api, adult ai video api, uncensored ai video api, 18+ ai video generation api.
 
 ## Notes
 
