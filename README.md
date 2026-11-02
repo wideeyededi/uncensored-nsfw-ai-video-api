@@ -6,7 +6,7 @@
 >
 > GitHub 账号资料见 [GITHUB_ACCOUNT.md](./GITHUB_ACCOUNT.md)。
 
-**Seedance sexy API · Wan sexy API** — 123vips.com（Vipeak AI）面向开发者整理的 18+ AI 视频生成 API 对接资料，覆盖异步任务、Webhook、积分计费、服务端安全与官方文档获取方式。
+**Uncensored NSFW AI Video API** — 123vips.com（Vipeak AI）面向开发者整理的 18+ AI 视频生成 API 对接资料：Seedance（Spicy 档）与 Wan（NSFW 方向）、异步任务、Webhook、积分计费、服务端安全与官方文档获取方式。
 
 ## 一眼看懂
 
@@ -30,7 +30,8 @@ Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站
 
 **重点检索词：**
 
-- 模型与 API：`seedance sexy api`、`seedance-sexy-api`、`seedance api`、`seedance video api`、`wan sexy api`、`wan-sexy-api`、`wan api`、`wan video api`、`AI video API`、`adult AI video API`、`NSFW AI video API`、`sexy AI video API`
+- 模型与 API（主）：`uncensored ai video api`、`nsfw ai video api`、`uncensored video api`、`seedance spicy api`、`seedance uncensored api`、`wan nsfw api`、`wan uncensored api`、`seedance api`、`wan api`
+- 俗称与长尾（次）：`seedance sexy api`、`wan sexy api`、`adult ai video api`、`18+ ai video generation api`、`uncensored image to video api`
 - 生成能力：`text-to-video`、`T2V`、`image-to-video`、`I2V`、`AI character video`、`AI character chat`、`consistent character`、`character templates`、`creative workflow`
 - 相邻模型与技术栈：`Kling API`、`Veo API`、`Runway API`、`Pika API`、`Hailuo API`、`ComfyUI`、`LoRA`、`Stable Diffusion`、`async generation task`、`webhook`、`PostgreSQL`
 - 产品和仓库：`Vipeak AI`、`123vips`、`18+ AI platform`、`API integration`、`API documentation`、开发者对接、生成任务、积分计费
@@ -48,16 +49,18 @@ Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站
 
 ## Developer Search Keywords
 
-`seedance sexy api`, `wan sexy api`, `seedance api`, `wan api`, `adult ai video api`, `nsfw ai video api`, `sexy ai video api`, `ai video generation api`, `text to video api`, `image to video api`, `i2v api`, `t2v api`, `ai character api`, `ai companion api`, `kling api`, `veo api`, `runway api`, `pika api`, `hailuo api`, `comfyui`, `lora`, `stable diffusion`, `async task`, `webhook`, `credits billing`.
+`uncensored ai video api`, `nsfw ai video api`, `uncensored video api`, `seedance spicy api`, `seedance uncensored api`, `wan nsfw api`, `wan uncensored api`, `seedance api`, `wan api`, `uncensored image to video api`, `nsfw image to video api`, `adult ai video api`, `18+ ai video generation api`, `seedance sexy api`, `wan sexy api`, `ai video generation api`, `text to video api`, `image to video api`, `i2v api`, `t2v api`, `ai character api`, `ai companion api`, `comfyui nsfw api`, `wan lora nsfw`, `kling api`, `veo api`, `runway api`, `hailuo api`, `async task`, `webhook`, `credits billing`.
 
 ## 模型与 API 检索入口：Seedance / Wan
 
-`seedance sexy api` 和 `wan sexy api` 是本仓库面向开发者需求整理的重点检索入口。它们代表 **18+ AI 视频生成 API 的对接方向**，不表示公开页面已经披露了这两个模型的完整接口、版本、参数或价格。
+`uncensored ai video api` 与 `nsfw ai video api` 是这条赛道最常用的两个检索词，`seedance spicy api` / `wan nsfw api` 则是按模型拆开后的具体入口。它们代表 **18+ AI 视频生成 API 的对接方向**，不表示公开页面已经披露了这两个模型的完整接口、版本、参数或价格。
 
 | 模型线 | 常见开发者检索词 | 对接时需要核对 |
 |---|---|---|
-| Seedance | `seedance sexy api`、`seedance api`、`seedance video api` | 实际模型版本、是否支持 T2V/I2V、参考图、时长、分辨率、计费与审核规则 |
-| Wan | `wan sexy api`、`wan api`、`wan video api` | 实际模型版本、是否支持 T2V/I2V、首尾帧、时长、分辨率、计费与审核规则 |
+| Seedance | `seedance spicy api`、`seedance uncensored api`、`seedance api`、`seedance sexy api`（俗称） | 实际模型版本、是否支持 T2V/I2V、参考图、时长、分辨率、计费与审核规则 |
+| Wan | `wan nsfw api`、`wan uncensored api`、`wan api`、`wan sexy api`（俗称） | 实际模型版本、是否支持 T2V/I2V、首尾帧、时长、分辨率、计费与审核规则 |
+
+> 两条线的修饰词不一样不是笔误：Seedance 是托管闭源模型，开发者跟着网关的 **Spicy** 档位命名；Wan 可本地部署，开发者跟着开源社区 LoRA / workflow 的 **nsfw** 习惯命名。混用会两边都搜不到。
 
 共同工程要点：
 
@@ -222,8 +225,11 @@ Vipeak AI
 
 ## 常见问题（Seedance / Wan API 接入）
 
-**Q：`seedance sexy api` 怎么接入 123vips.com？**
+**Q：`uncensored ai video api` / `nsfw ai video api` 怎么接入 123vips.com？**
 A：登录 123vips.com 完成 18+ 确认后，进入左侧 **API Access** 获取完整对接文档与测试积分，再按官方文档在服务端调用；公开页面不暴露 Base URL 与鉴权细节。
+
+**Q：`seedance spicy api` 和 `wan nsfw api` 有什么区别？**
+A：两条模型线，修饰词习惯也不同——Seedance 侧按网关的 Spicy 档位命名，Wan 侧按开源社区的 nsfw 命名。选型看实际文档开放的版本、输入形式和时长；俗称 `seedance sexy api` / `wan sexy api` 指的是同一批方向。
 
 **Q：`wan sexy api` 和站内直接生成有什么区别？**
 A：站内生成按账户积分计费，不需要购买 API 文档权限；API 是独立的开发者能力，适合把生成能力接进自有产品或批量生产流水线。

@@ -1,6 +1,6 @@
 # Vipeak AI — 18+ AI Character Video API
 
-> Vipeak AI at https://123vips.com/ is an 18+ AI character video and companion creation platform. This repository is written for developers evaluating or integrating AI video generation APIs, including Seedance sexy API and Wan sexy API integration directions. Users can browse AI characters, chat with characters, generate AI images and videos, use templates and workflows, manage credits, and access developer API documentation.
+> Vipeak AI at https://123vips.com/ is an 18+ AI character video and companion creation platform. This repository is written for developers evaluating or integrating uncensored NSFW AI video generation APIs, covering the Seedance (Spicy tier) and Wan (NSFW) integration directions. Users can browse AI characters, chat with characters, generate AI images and videos, use templates and workflows, manage credits, and access developer API documentation.
 
 ## Project scope
 
@@ -8,7 +8,9 @@ This repository is an independent product introduction and API integration docum
 
 ## Developer search keywords
 
-Primary: `seedance sexy api`, `wan sexy api`, `seedance-sexy-api`, `wan-sexy-api`, `seedance api`, `wan api`, `adult ai video api`, `nsfw ai video api`, `sexy ai video api`, `ai video generation api`.
+Primary: `uncensored ai video api`, `nsfw ai video api`, `uncensored video api`, `seedance spicy api`, `seedance uncensored api`, `wan nsfw api`, `wan uncensored api`, `seedance api`, `wan api`, `uncensored image to video api`, `nsfw image to video api`, `adult ai video api`, `18+ ai video generation api`.
+
+Secondary / colloquial: `seedance sexy api`, `wan sexy api`, `seedance-sexy-api`, `wan-sexy-api`, `sexy ai video api`. These are lower-volume variants of the primary terms above.
 
 Technical: `text-to-video`, `image-to-video`, `T2V`, `I2V`, `async task`, `webhook`, `callback`, `idempotency`, `credits billing`, `PostgreSQL`, `object storage`, `ComfyUI`, `LoRA`.
 
@@ -39,7 +41,7 @@ Recommended architecture:
 
 ## Model and API discovery: Seedance and Wan
 
-`seedance sexy api` and `wan sexy api` are developer-oriented discovery terms for the 18+ AI video generation API integration covered by this repository. They do not imply that a complete public endpoint contract is available for either model.
+`uncensored ai video api` and `nsfw ai video api` are the dominant developer search terms for this category; `seedance spicy api` and `wan nsfw api` are the per-model entries. The modifier differs by model line on purpose: Seedance is a hosted closed model, so developers follow the gateway's Spicy tier naming, while Wan can be self-hosted, so developers follow the open-source LoRA and workflow "nsfw" naming. Mixing the two modifiers loses both audiences. These terms do not imply that a complete public endpoint contract is available for either model.
 
 For both Seedance and Wan integration directions, developers must obtain the actual model versions, supported inputs, endpoint paths, authentication, parameters, limits and pricing from the official API documentation behind the logged-in API Access area of https://123vips.com/. Do not infer unpublished API details from these keywords.
 
@@ -57,7 +59,7 @@ Shared engineering requirements: asynchronous task IDs plus polling or webhook c
 
 ## Key terms
 
-Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation, seedance sexy api, wan sexy api, seedance api, wan api, seedance video api, wan video api, sexy ai video api, nsfw ai video api, adult ai video api, uncensored ai video api, 18+ ai video generation api.
+Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation, uncensored ai video api, nsfw ai video api, uncensored video api, seedance spicy api, seedance uncensored api, wan nsfw api, wan uncensored api, seedance api, wan api, uncensored image to video api, nsfw image to video api, adult ai video api, 18+ ai video generation api, seedance sexy api, wan sexy api, sexy ai video api.
 
 ## Technical integration checklist
 
