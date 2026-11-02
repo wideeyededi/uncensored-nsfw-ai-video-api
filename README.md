@@ -3,6 +3,8 @@
 > 主站地址：<https://123vips.com/>
 >
 > 本仓库只做产品介绍、截图和对接资料整理，不包含主站业务代码、用户数据、密钥或部署配置。
+>
+> GitHub 账号资料见 [GITHUB_ACCOUNT.md](./GITHUB_ACCOUNT.md)。
 
 ## 一眼看懂
 
