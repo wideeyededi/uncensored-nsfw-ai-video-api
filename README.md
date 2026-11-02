@@ -6,7 +6,7 @@
 >
 > GitHub 账号资料见 [GITHUB_ACCOUNT.md](./GITHUB_ACCOUNT.md)。
 
-**Seedance sexy API · Wan sexy API** — 123vips.com（Vipeak AI）面向成年人的 AI 视频生成 API 接入文档与示例，覆盖 Seedance、Wan 两条模型线：文生视频、图生视频、角色视频、异步任务轮询与积分计费。
+**Seedance sexy API · Wan sexy API** — 123vips.com（Vipeak AI）面向开发者整理的 18+ AI 视频生成 API 对接资料，覆盖异步任务、Webhook、积分计费、服务端安全与官方文档获取方式。
 
 ## 一眼看懂
 
@@ -24,37 +24,49 @@ Vipeak AI 是一个 AI 角色视频与陪伴创作平台。用户可以在主站
 
 > 主站面向成年人。进入角色与创作页面时会先显示 18+ 年龄确认。
 
-## 项目定位与关键词
+## 项目定位与开发者关键词
 
-**一句话定位：** Vipeak AI（123vips.com）是面向成年人的 AI 角色视频与陪伴创作平台，提供角色浏览、角色聊天、AI 图片生成、AI 视频生成、图生视频、文生视频、角色模板、案例、工作流和 API 对接入口。
+**一句话定位：** 123vips.com（Vipeak AI）是面向成年人的 AI 角色视频与陪伴生成平台。本仓库面向开发者，整理 18+ 视频生成 API 的公开入口、对接准备、异步任务架构、Webhook、积分计费和服务端安全要求。
 
-**核心关键词：**
+**重点检索词：**
 
-- 产品与场景：`Vipeak AI`、`123vips`、AI 角色、AI 陪伴、AI 角色聊天、角色模板、成人向 AI 角色平台、AI 图片生成、AI 视频生成、图生视频、文生视频、创作工作流
-- English keywords: `AI character platform`、`AI companion`、`AI video generator`、`AI image generator`、`image-to-video`、`text-to-video`、`AI character chat`、`character templates`、`creative workflow`
-- 开发与对接：`API integration`、API 文档、开发者接入、生成任务、异步任务、Webhook、积分计费、PostgreSQL、对象存储
-- 模型与 API 长尾词：`seedance sexy api`、`wan sexy api`、`seedance api`、`wan api`、`seedance video api`、`wan video api`、`sexy ai video api`、`nsfw ai video api`、`adult ai video api`、`uncensored ai video api`、`18+ ai video generation api`
-- 仓库用途：产品介绍、主站截图、API 对接准备、接入架构与安全建议
+- 模型与 API：`seedance sexy api`、`seedance-sexy-api`、`seedance api`、`seedance video api`、`wan sexy api`、`wan-sexy-api`、`wan api`、`wan video api`、`AI video API`、`adult AI video API`、`NSFW AI video API`、`sexy AI video API`
+- 生成能力：`text-to-video`、`T2V`、`image-to-video`、`I2V`、`AI character video`、`AI character chat`、`consistent character`、`character templates`、`creative workflow`
+- 相邻模型与技术栈：`Kling API`、`Veo API`、`Runway API`、`Pika API`、`Hailuo API`、`ComfyUI`、`LoRA`、`Stable Diffusion`、`async generation task`、`webhook`、`PostgreSQL`
+- 产品和仓库：`Vipeak AI`、`123vips`、`18+ AI platform`、`API integration`、`API documentation`、开发者对接、生成任务、积分计费
 
-> 本仓库是产品与对接资料仓库，不是 123vips.com 的网站源代码仓库。面向 AI 搜索与代码助手的结构化摘要见 [llms.txt](./llms.txt)。
+**说明：** 以上是面向开发者的检索关键词和对接方向，不等于主站已公开全部模型或接口。实际可调用模型、参数、计费和接口路径，以登录后获取的官方 API 文档为准。不要根据关键词猜测未公开接口。
 
-## 模型与 API 能力：Seedance / Wan
+面向 AI 搜索与代码助手的结构化摘要见 [llms.txt](./llms.txt)。
 
-本仓库的 API 对接资料围绕两条成人向视频生成模型线整理，这两条线也是开发者搜索接入时最常用的入口词：
+## 开发者能在这里找到什么
 
-| 模型线 | 常见搜索写法 | 对接方向 |
+- `API_INTEGRATION.md`：API Access 入口、接入流程、服务端架构和安全要求
+- `llms.txt`：给 AI 搜索、代码助手和自动化工具读取的结构化产品摘要
+- `screenshots/`：主站和 API Access 的脱敏截图
+- `README.md`：产品能力、页面入口、技术栈和对接边界
+
+## Developer Search Keywords
+
+`seedance sexy api`, `wan sexy api`, `seedance api`, `wan api`, `adult ai video api`, `nsfw ai video api`, `sexy ai video api`, `ai video generation api`, `text to video api`, `image to video api`, `i2v api`, `t2v api`, `ai character api`, `ai companion api`, `kling api`, `veo api`, `runway api`, `pika api`, `hailuo api`, `comfyui`, `lora`, `stable diffusion`, `async task`, `webhook`, `credits billing`.
+
+## 模型与 API 检索入口：Seedance / Wan
+
+`seedance sexy api` 和 `wan sexy api` 是本仓库面向开发者需求整理的重点检索入口。它们代表 **18+ AI 视频生成 API 的对接方向**，不表示公开页面已经披露了这两个模型的完整接口、版本、参数或价格。
+
+| 模型线 | 常见开发者检索词 | 对接时需要核对 |
 |---|---|---|
-| Seedance | `seedance sexy api`、`seedance api`、`seedance video api` | 文生视频、图生视频、参考图与多镜头生成、角色动作一致性 |
-| Wan | `wan sexy api`、`wan api`、`wan video api` | 文生视频、图生视频、首尾帧控制、角色一致性、长时长片段 |
+| Seedance | `seedance sexy api`、`seedance api`、`seedance video api` | 实际模型版本、是否支持 T2V/I2V、参考图、时长、分辨率、计费与审核规则 |
+| Wan | `wan sexy api`、`wan api`、`wan video api` | 实际模型版本、是否支持 T2V/I2V、首尾帧、时长、分辨率、计费与审核规则 |
 
-两条线共同的对接要点：
+共同工程要点：
 
-- 任务异步化：创建任务后拿任务 ID，再通过轮询或 Webhook 取结果。
-- 参数收敛：模型版本、分辨率、时长、比例、参考图数量都要在服务端做白名单。
-- 计费可追溯：下单前存价格快照，失败要能退款，账单能与上游对账。
-- 内容合规：18+ 年龄门槛、地区限制与上游审核策略必须在业务侧落地。
+- **异步任务**：创建任务后保存任务 ID，再通过轮询或 Webhook 接收结果。
+- **参数白名单**：模型、分辨率、时长、比例和参考图数量由服务端限制。
+- **计费可追溯**：保存价格快照、预扣和退款记录，并保留对账依据。
+- **内容合规**：18+ 门槛、地区限制和上游审核策略必须在业务侧实现。
 
-> 具体模型版本号、可用参数、并发上限与积分单价，以登录 123vips.com 后 **API Access** 里的官方文档为准；本仓库不猜测未公开的接口细节。
+> 具体模型版本、接口路径、鉴权方式、参数、并发限制和积分单价，以登录 123vips.com 后 **API Access** 提供的官方文档为准。本仓库不猜测未公开接口。
 
 ## 主站能做什么
 
@@ -217,7 +229,7 @@ A：登录 123vips.com 完成 18+ 确认后，进入左侧 **API Access** 获取
 A：站内生成按账户积分计费，不需要购买 API 文档权限；API 是独立的开发者能力，适合把生成能力接进自有产品或批量生产流水线。
 
 **Q：Seedance 和 Wan 两条线怎么选？**
-A：Seedance 更偏参考图、多镜头和动作表现；Wan 更偏首尾帧控制与角色一致性。实际可用模型、版本和价格以登录后文档为准，建议用测试积分各跑一轮小流量对比。
+A：先确认官方文档中实际开放的模型版本、输入形式、时长、分辨率和计费规则，再用测试积分分别跑一轮小流量对比。不要仅根据检索词推断接口能力。
 
 **Q：接入前必须准备什么？**
 A：服务端（不要放前端）、PostgreSQL 存任务与积分流水、对象存储放素材、异步任务与回调处理、失败退款逻辑，以及面向目标市场的合规评估。

@@ -1,10 +1,18 @@
-# Vipeak AI
+# Vipeak AI — 18+ AI Character Video API
 
-> Vipeak AI is an 18+ AI character video and companion creation platform at https://123vips.com/. Users can browse AI characters, chat with characters, generate AI images and videos, use character templates, explore cases and workflows, manage credits and history, and access developer API documentation.
+> Vipeak AI at https://123vips.com/ is an 18+ AI character video and companion creation platform. This repository is written for developers evaluating or integrating AI video generation APIs, including Seedance sexy API and Wan sexy API integration directions. Users can browse AI characters, chat with characters, generate AI images and videos, use templates and workflows, manage credits, and access developer API documentation.
 
 ## Project scope
 
 This repository is an independent product introduction and API integration documentation repository. It is not the source code of the 123vips.com website and does not contain user data, credentials, or production configuration.
+
+## Developer search keywords
+
+Primary: `seedance sexy api`, `wan sexy api`, `seedance-sexy-api`, `wan-sexy-api`, `seedance api`, `wan api`, `adult ai video api`, `nsfw ai video api`, `sexy ai video api`, `ai video generation api`.
+
+Technical: `text-to-video`, `image-to-video`, `T2V`, `I2V`, `async task`, `webhook`, `callback`, `idempotency`, `credits billing`, `PostgreSQL`, `object storage`, `ComfyUI`, `LoRA`.
+
+Adjacent model categories for evaluation: `Kling API`, `Veo API`, `Runway API`, `Pika API`, `Hailuo API`. These are discovery terms only; the actual model list and endpoint contract must come from the official documentation obtained after signing in to 123vips.com.
 
 ## Core capabilities
 
@@ -29,16 +37,13 @@ Recommended architecture:
 - Store image and video files in object storage with metadata retained in PostgreSQL
 - Handle asynchronous tasks, polling or webhooks, timeouts, retries, idempotency, and failure refunds
 
-## Model lines: Seedance and Wan
+## Model and API discovery: Seedance and Wan
 
-The API integration material in this repository focuses on two adult-oriented video generation model lines:
+`seedance sexy api` and `wan sexy api` are developer-oriented discovery terms for the 18+ AI video generation API integration covered by this repository. They do not imply that a complete public endpoint contract is available for either model.
 
-- **Seedance** — searched as `seedance sexy api`, `seedance api`, `seedance video api`. Direction: text-to-video, image-to-video, reference-image and multi-shot generation, character motion consistency.
-- **Wan** — searched as `wan sexy api`, `wan api`, `wan video api`. Direction: text-to-video, image-to-video, first/last frame control, character consistency, longer clips.
+For both Seedance and Wan integration directions, developers must obtain the actual model versions, supported inputs, endpoint paths, authentication, parameters, limits and pricing from the official API documentation behind the logged-in API Access area of https://123vips.com/. Do not infer unpublished API details from these keywords.
 
-Shared integration requirements: asynchronous task model (task id plus polling or webhook), server-side whitelisting of model version, resolution, duration and reference count, price snapshot before order with refund on failure, and an 18+ gate with regional compliance on the business side.
-
-Model versions, parameters, concurrency limits and per-credit pricing are only available in the official documentation behind the logged-in API Access area.
+Shared engineering requirements: asynchronous task IDs plus polling or webhook callbacks, server-side parameter whitelisting, PostgreSQL task and credit records, failure refunds, idempotency, rate limiting, and an 18+ gate with regional compliance.
 
 ## Official links
 
@@ -54,9 +59,21 @@ Model versions, parameters, concurrency limits and per-credit pricing are only a
 
 Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI video generator, AI image generator, image-to-video, text-to-video, character templates, creative workflow, AI roleplay-adjacent companion experiences, API integration, API documentation, seedance sexy api, wan sexy api, seedance api, wan api, seedance video api, wan video api, sexy ai video api, nsfw ai video api, adult ai video api, uncensored ai video api, 18+ ai video generation api.
 
+## Technical integration checklist
+
+- Keep upstream API keys server-side only
+- Create a local task record before submitting an upstream generation job
+- Support queued/running/succeeded/failed states and terminal-state handling
+- Handle polling or webhook callbacks with signature verification and replay protection
+- Persist user, task, credit, order, and generation metadata in PostgreSQL
+- Store generated image/video assets in object storage with ownership metadata in PostgreSQL
+- Implement idempotency, rate limiting, retries, timeouts, and failed-job refunds
+- Validate uploaded file types, sizes, and content before forwarding to an upstream API
+
 ## Notes
 
 - The website contains adult-oriented content and requires an 18+ confirmation.
 - Site generation uses account credits and does not require API documentation access.
 - API access is a separate developer capability; availability and terms are shown after signing in.
+- The keyword list describes search and integration directions, not a guarantee that every listed model or endpoint is publicly available.
 - This repository contains no passwords, tokens, database URLs, user data, or payment credentials.
