@@ -30,7 +30,12 @@ Adjacent model categories for evaluation: `Kling API`, `Veo API`, `Runway API`, 
 
 ## Developer integration
 
-The complete API documentation is obtained through the logged-in API Access area on 123vips.com. Public information does not expose the API Base URL, authentication scheme, endpoint paths, webhook format, or billing rules. Do not infer or guess unpublished API details.
+The canonical API documentation is published at https://123vip.fans/docs/api.md (markdown) and https://123vip.fans/docs/api.json (structured JSON), with the machine-readable model catalog at https://123vip.fans/api/models. The API Base URL is https://123vip.fans, authentication is a standard `Authorization: Bearer <token>` header, and billing is 1 USD = 100 credits.
+
+Official SDK and tools:
+
+- Python SDK + MCP server: https://github.com/wideeyededi/vipeak-api (install with `pip install vipeak-api`; PyPI: https://pypi.org/project/vipeak-api/)
+- MCP server entry: `python -m vipeak_mcp` (configure `VIPEAK_API_KEY`), exposing list_models / text_to_video / image_to_video / get_task / wait_for_video / create_image tools for Claude, Cursor and Codex.
 
 Recommended architecture:
 
@@ -50,6 +55,10 @@ Shared engineering requirements: asynchronous task IDs plus polling or webhook c
 ## Official links
 
 - Main site: https://123vips.com/
+- API docs: https://123vip.fans/docs/api.md
+- Model catalog: https://123vip.fans/api/models
+- Python SDK + MCP: https://github.com/wideeyededi/vipeak-api
+- PyPI: https://pypi.org/project/vipeak-api/
 - Brand page: https://123vips.com/site-landing.html
 - Character and creation workspace: https://123vips.com/live.html
 - Character library: https://123vips.com/characters/
@@ -79,3 +88,4 @@ Vipeak AI, 123vips, AI character platform, AI companion, AI character chat, AI v
 - API access is a separate developer capability; availability and terms are shown after signing in.
 - The keyword list describes search and integration directions, not a guarantee that every listed model or endpoint is publicly available.
 - This repository contains no passwords, tokens, database URLs, user data, or payment credentials.
+- `pip install vipeak-api` provides the official Python client and MCP server; credentials are supplied by the caller and never hardcoded.
