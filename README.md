@@ -34,6 +34,8 @@ This repository documents the **NSFW API** of 123vips.com: an uncensored AI vide
 
 Note on naming: "NSFW API" is also widely used for NSFW *detection and moderation* APIs (image/video classifiers). This repository covers **generation**, not moderation — keep that in mind when comparing search results.
 
+> **Quick start:** install the official SDK with `pip install vipeak-api`, or point your MCP client at `python -m vipeak_mcp`. Repo: https://github.com/wideeyededi/vipeak-api
+
 ## Positioning and developer keywords
 
 **One-liner:** 123vips.com (Vipeak AI) is an AI character video and companion generation platform for adults. This repository is written for developers and covers the public entry point of the 18+ video generation API, integration preparation, async task architecture, webhooks, credit billing and server-side security requirements.
@@ -56,6 +58,7 @@ Structured summary for AI search and coding assistants: [llms.txt](./llms.txt).
 - `llms.txt`: structured product summary for AI search, coding assistants and automation tools
 - `screenshots/`: redacted screenshots of the site and the API Access page
 - `README.md`: product capabilities, page entry points, stack and integration boundaries
+- **Python SDK + MCP server**: [`wideeyededi/vipeak-api`](https://github.com/wideeyededi/vipeak-api) — install with `pip install vipeak-api`, or run `python -m vipeak_mcp` to let Claude / Cursor / Codex generate video directly. PyPI: https://pypi.org/project/vipeak-api/
 
 ## Developer search keywords
 
